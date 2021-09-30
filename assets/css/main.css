@@ -2645,7 +2645,13 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
         padding: 0 4px;
     }
 
-    /* Create four equal columns that sits next to each other */
+    .column {
+		-ms-flex: 25%; /* IE10 */
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+	  }
+
     .column-one-third {
         -ms-flex: 33.33333%;
         /* IE10 */
@@ -2669,7 +2675,7 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
     }
 
     .column video {
-        margin-top: 12px;
+        margin-top: 8px;
         vertical-align: middle;
         width: 100%;
     }
@@ -2680,7 +2686,18 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
             -ms-flex: 50%;
             flex: 50%;
             max-width: 50%;
-        }
+		}
+		.column-one-third {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+		}
+		
+		.column-half {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+		}
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -2689,7 +2706,19 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
             -ms-flex: 100%;
             flex: 100%;
             max-width: 100%;
-        }
+		}
+		.column-one-third {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+		}
+
+		.column-half {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+		}
+		
 	}
 
 
@@ -2700,4 +2729,14 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
 		ul li:hover ul {
 			display: block;
 
+		}
+
+		#left-col {
+			padding-top: 22px;
+			padding-bottom: 25px;
+
+		}
+
+		video {
+			width: 100%;
 		}
