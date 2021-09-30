@@ -12,6 +12,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		ul li ul {
+			display: none;
+		}
+
+		ul li:hover ul {
+			display: block;
+
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -32,14 +43,25 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-file-video-o">Portfolio</span></a></li>
+					<li><a href="#highlights" id="highlight-link"><span class="icon solid fa-th">Highlights</span></a>
+					</li>
+					<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a>
+						<ul>
+							<li><a href="food.html" id="food-link"><span
+										class="icon solid fa-file-video-o">Food</span></a></li>
+							<li><a href="drinks.html" id="drinks-link"><span
+										class="icon solid fa-file-video-o">Drinks</span></a></li>
+							<li><a href="outdoor.html" id="outdoor-link"><span
+										class="icon solid fa-file-video-o">Outdoor</span></a></li>
+							<li><a href="colour-grade.html" id="colour-grade-link"><span
+										class="icon solid fa-file-video-o">Colour Grade</span></a></li>
+						</ul>
+					</li>
 					<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-					<li><a href="#about" id="about-link"><span class="icon solid fa-video-camera">Gear</span></a></li>
 					<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a>
 					</li>
 				</ul>
 			</nav>
-
 		</div>
 
 		<div class="bottom">
@@ -69,18 +91,18 @@
 				</header>
 
 				<footer>
-					<a href="#portfolio" class="button scrolly">Toes</a>
+					<a href="#highlights" class="button scrolly">Highlights</a>
 				</footer>
 
 			</div>
 		</section>
 
 		<!-- Portfolio -->
-		<section id="portfolio" class="two">
+		<section id="highlights" class="two">
 			<div class="container">
 
 				<header>
-					<h2>Portoelio</h2>
+					<h2>Highlights</h2>
 				</header>
 
 				<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
@@ -90,30 +112,32 @@
 
 				<!-- Photo Grid -->
 				<div class="row">
-					<div class="column">
+					<div class="column-one-third">
 						<video autoplay loop muted inline style="width:100%">
-							<source src="./videos/Chicken.mp4" type="video/mp4">
+							<source src="./videos/highlights/Bacardi.mp4" type="video/mp4">
 						</video>
 						<video autoplay loop muted inline style="width:100%">
-							<source src="./videos/Soda Bubbles.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="column">
-						<video autoplay loop muted inline style="width:100%">
-							<source src="./videos/Bacardi.mp4" type="video/mp4">
-						</video>
-						<video autoplay loop muted inline style="width:100%">
-							<source src="./videos/Chicken Timelapse.mp4" type="video/mp4">
+							<source src="./videos/highlights/Herbs SIgn.mp4" type="video/mp4">
 						</video>
 					</div>
-					<div class="column">
+					<div class="column-one-third">
 						<video autoplay loop muted inline style="width:100%">
-							<source src="./videos/Espresso Martini.mp4" type="video/mp4">
+							<source src="./videos/highlights/Harry's Intro.mp4" type="video/mp4">
 						</video>
 						<video autoplay loop muted inline style="width:100%">
-							<source src="./videos/Vodka.mp4" type="video/mp4">
+							<source src="./videos/highlights/Crepes.mp4" type="video/mp4">
 						</video>
 					</div>
+					<div class="column-one-third">
+						<video autoplay loop muted inline style="width:100%">
+							<source src="./videos/highlights/Espresso Martini.mp4" type="video/mp4">
+						</video>
+						<video autoplay loop muted inline style="width:100%">
+							<source src="./videos/highlights/Margarita Glass.mp4" type="video/mp4">
+						</video>
+					</div>
+
+
 				</div>
 
 			</div>

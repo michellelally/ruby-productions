@@ -2646,16 +2646,30 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
     }
 
     /* Create four equal columns that sits next to each other */
-    .column {
+    .column-one-third {
         -ms-flex: 33.33333%;
         /* IE10 */
         flex: 33.33333%;
         max-width: 33.33333%;
         padding: 0 10px;
+	}
+	.column-half {
+        -ms-flex: 50%;
+        /* IE10 */
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 10px;
+	}
+	.column-two-thirds {
+        -ms-flex: 66.66666%;
+        /* IE10 */
+        flex: 66.66666%;
+        max-width: 66.66666%;
+        padding: 0 10px;
     }
 
-    .column img {
-        margin-top: 8px;
+    .column video {
+        margin-top: 12px;
         vertical-align: middle;
         width: 100%;
     }
@@ -2676,4 +2690,14 @@ background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(
             flex: 100%;
             max-width: 100%;
         }
-    }
+	}
+
+
+		ul li ul {
+			display: none;
+		}
+
+		ul li:hover ul {
+			display: block;
+
+		}
