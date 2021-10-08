@@ -2248,11 +2248,20 @@ input, select, textarea {
 
 			#main > section.one {
 				 background: rgb(180,58,75);
-background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(253,29,29,0.8981793400954132) 50%, rgba(252,150,69,0.9289916650253851) 100%); 
+				background: linear-gradient(220deg, rgba(180,58,75,0.8981793400954132) 0%, rgba(253,29,29,0.8981793400954132) 50%, rgba(252,150,69,0.9289916650253851) 100%); 
 			}
 
 			#drinks > #main > section.one {
 				background-image: url(../../images/drinks-bg-blur.jpg);
+				opacity: 0.875;
+				height: 100%;
+				background-position: center;
+				background-size: cover;
+			}
+
+
+			#outdoors > #main > section.one {
+				background-image: url(../../images/bg-nature-blur.jpg);
 				opacity: 0.875;
 				height: 100%;
 				background-position: center;
