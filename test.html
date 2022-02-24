@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="navbar.css" />
-    <title>Responsive Navigation Menu with JavaScript</title>
-  </head>
-  <body>
-    <div class="mobile-nav">
-      <i class="fas fa-bars mobile-menu-btn"></i>
-      <ul class="mobile-menu slide-out display-none">
-        <li>Home</li>
-        <li>Products</li>
-        <li>Contact Us</li>
-        <li>About</li>
-      </ul>
-    </div>
-    <nav>
-      <div class="nav-wrap">
-        <a href="index.html">
-          <img src="rubyproductions.png" alt="Logo" height=75 width=75>
-        </a>
-        <div class="nav-right">
-          <ul class="desktop-menu">
-            <li>Home</li>
-            <li>Products</li>
-            <li>Contact Us</li>
-            <li>About</li>
-          </ul>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="navbar.css" />
+  <title>Responsive Navigation Menu with JavaScript</title>
+</head>
+
+<body>
+  <div class="mobile-nav">
+    <i class="fas fa-bars mobile-menu-btn"></i>
+    <ul class="mobile-menu slide-out display-none">
+      <li>Home</li>
+      <li>Products</li>
+      <li>Contact Us</li>
+      <li>About</li>
+    </ul>
+  </div>
+  <nav>
+    <div class="nav-wrap">
+      <a href="index.html">
+        <img src="rubyproductions.png" alt="Logo" height=75 width=75>
+      </a>
+      <div class="nav-right">
+        <ul class="desktop-menu">
+          <li>Home</li>
+          <li>Products</li>
+          <li>Contact Us</li>
+          <li>About</li>
+        </ul>
       </div>
-    </nav>
-    <div class="bg">
-      <div class="bg-overlay"></div>
-      <video class="desktop-video" loop autoplay muted src="video.mp4" alt=""></video>
-      <video class="mobile-video" loop autoplay muted src="video-mobile.mp4" alt=""></video>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </nav>
+  <div class="bg">
+    <div class="bg-overlay"></div>
+    <video class="desktop-video" loop autoplay muted src="video.mp4" alt=""></video>
+    <video class="mobile-video" loop autoplay muted src="video.mp4" alt=""></video>
+  </div>
+
+  <iframe width="640" height="390" src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <script src="script.js"></script>
+</body>
+
 </html>
