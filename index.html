@@ -5,18 +5,45 @@
   <meta charset="UTF-8">
   <title>Ruby Productions</title>
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
+  <div class="mobile-nav">
+    <i class="fas fa-bars mobile-menu-btn"></i>
+    <ul class="mobile-menu slide-out display-none">
+      <li><a href='food.html'>Food</a></li>
+      <li><a href='drinks.html'>Drinks</a></li>
+      <li><a href='events.html'>Events</a></li>
+      <li><a href='about.html'>About</a></li>
+    </ul>
+  </div>
+  <nav>
+    <div class="nav-wrap">
+      <a href="index.html">
+        <h1>Ruby Productions</h1>
+      </a>
+      <div class="nav-right">
+        <ul class="desktop-menu">
+          <li><a href='food.html'>Food</a></li>
+          <li><a href='drinks.html'>Drinks</a></li>
+          <li><a href='events.html'>Events</a></li>
+          <li><a href='about.html'>About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <section>
-    <!-- <iframe width="819" src="https://www.youtube.com/embed/fEh6kz09IhM?loop=1&autoplay=1&mute=1&controls=0" ></iframe> -->
     <video src="./assets/highlights.mp4" autoplay muted loop></video>
-
-    <h2><span style="font-size: 40vw;">Ruby</span> Productions
-      <br><span>Freelance  Videographer</span>
+    <h2><span style="font-size: 36.25vw; letter-spacing: 0.025em;">Ruby</span>Productions
+      <br><span>Freelance Videographer</span>
     </h2>
   </section>
+
+  <!-- <section>
+    <h5 style="color: white;">My showreel</h5>
+  </section> -->
 
   <div class="footer">
     <div id="button"></div>
@@ -24,11 +51,15 @@
       <div id="cont">
         <div class="footer_center">
           <h3>Footer</h3>
+          <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </div> 
-  <script src="./script.js"></script>
+  </div>
 
 </body>
 
