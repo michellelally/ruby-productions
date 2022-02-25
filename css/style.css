@@ -23,7 +23,7 @@ section{
   overflow: hidden;
 }
 section video {
-  animation: fadeInAnimation ease 10s;
+  animation: fadeInAnimation ease 8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   position: absolute;

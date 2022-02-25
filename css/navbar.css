@@ -46,7 +46,7 @@ ul {
 
 li {
   cursor: pointer;
-  margin-left: 50px;
+  margin-left: 40px;
   text-transform: uppercase;
   transition: 500ms ease all;
 }
@@ -77,6 +77,10 @@ a {
   text-transform: uppercase;
   display: inline-block;
   text-shadow: 0 0 1.25px white;
+}
+
+a:hover{
+  color: orangered;
 }
 
 .active {
@@ -140,7 +144,7 @@ a {
 
 @media (min-width: 750px) {
   .mobile-menu-btn {
-    display: none;
+    visibility: hidden;
   }
 
   .desktop-menu {
