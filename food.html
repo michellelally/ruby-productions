@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/drinks.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/video.css" />
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
@@ -48,19 +49,31 @@
 
             <section class="videos">
                 <ul id="video-list">
-                    <li>
-                        <a href="food.html">Video</a>
+                    <li onclick="show(market)">
+                        Video 
                     </li>
-                    <li>
-                        <a href="drinks.html">Video</a>
+                    <li onclick="show(bacon)">
+                        Video 
                     </li>
-                    <li>
-                        <a href="event.html">Video</a>
+                    <li onclick="show(market)">
+                        Video 
                     </li>
-                    <li>
-                        <a href="about.html">Video</a>
+                    <li onclick="show(bacon)">
+                        Video 
                     </li>
                 </ul>
+
+                <div class="popup" id="bacon">
+                    <iframe width="820" height="682" src="https://www.youtube.com/embed/1nayWnGCjDU" frameborder="0"
+                        allowfullscreen></iframe>
+                    <img src="assets/x.png" class="close" alt="x" onclick="hide(bacon)">
+                </div>
+
+                <div class="popup" id="market">
+                    <iframe width="831" height="467" src="https://www.youtube.com/embed/fEh6kz09IhM"
+                        allowfullscreen></iframe>
+                    <img src="assets/x.png" class="close" alt="x" onclick="hide(market)">
+                </div>
             </section>
 
             <video src="./assets/food.mp4" autoplay muted loop></video>
@@ -70,21 +83,21 @@
     <footer class="footer">
         <div id="button"></div>
         <div id="container">
-          <div id="cont">
-            <div class="footer_center">
-              <h3>Footer</h3>
-              <div class="row">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
+            <div id="cont">
+                <div class="footer_center">
+                    <h3>Footer</h3>
+                    <div class="row">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-            </div>
-          </div>
         </div>
-    </footer> 
+    </footer>
 
     <script src="js/script.js"></script>
-
+    <script src="js/video.js"></script>
 </body>
 
 </html>
