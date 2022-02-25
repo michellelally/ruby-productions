@@ -35,8 +35,11 @@
 }
 
 i {
-  font-size: 50px;
-  color: #fff;
+  margin-top: -10px;
+  margin-right: 20px;
+  color: pink;
+  height: 50px;
+  width: 50px;
 }
 
 ul {
@@ -46,7 +49,8 @@ ul {
 
 li {
   cursor: pointer;
-  margin-left: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-transform: uppercase;
   transition: 500ms ease all;
 }
@@ -85,7 +89,7 @@ a:hover{
 
 .active {
   background: crimson;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .nav-wrap {
