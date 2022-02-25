@@ -1,10 +1,12 @@
-function show() {
-    var popup = document.querySelector(".popup")
-    popup.style.visibility = "visible";
-    popup.classList.add("fadeIn");
-    // document.querySelector(".popup").style.animation = "fade 3s ease-in-out forwards";
+function show(video) {
+  console.log("video:", video.id)
+  var popup = document.getElementById(video.id)
+  popup.style.visibility = "visible";
+  popup.classList.add("fadeIn");
 }
 
-function hide() {
-  document.querySelector(".popup").style.visibility = "hidden";
+function hide(video) {
+  var popup = document.getElementById(video.id)
+  popup.style.visibility = "hidden";
+  popup.classList.remove("fadeIn");
 }

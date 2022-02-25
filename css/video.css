@@ -67,3 +67,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.btn2 {
+  position: fixed;
+  top: 60%;
+  left: 60%;
+  transform: translate(-60%, -60%);
+}

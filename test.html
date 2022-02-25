@@ -38,13 +38,21 @@
   </nav>
 
 
-  <div class="popup">
+  <div class="popup" id="market">
     <iframe width="831" height="467" src="https://www.youtube.com/embed/fEh6kz09IhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <img src="assets/x.png" class="close" alt="x" onclick="hide()">
+    <img src="assets/x.png" class="close" alt="x" onclick="hide(market)">
   </div>
 
 
-  <button class="btn" onclick="show()">Video</button>
+  <button class="btn" onclick="show(market)">Video 1</button>
+
+  <div class="popup" id="bacon">
+    <iframe width="820" height="682" src="https://www.youtube.com/embed/1nayWnGCjDU" frameborder="0" allowfullscreen></iframe>  
+    <img src="assets/x.png" class="close" alt="x" onclick="hide(bacon)">
+  </div>
+
+
+  <button class="btn2" onclick="show(bacon)">Video 2</button>
 
   <script src="js/video.js"></script>
 
